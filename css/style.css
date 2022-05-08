@@ -16,20 +16,25 @@ header {
   background-color: #fff;
   padding: 0.5rem 2rem;
 }
-
+.logo {
+  width: 55%;
+}
 .container {
   background-color: #f15179;
-  height: 50rem;
+  height: 46rem;
   padding: 1.5rem 1rem;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
+  row-gap: 1rem;
   align-items: flex-start;
   background: center / cover no-repeat
     url(https://dals0gb6i1pll.cloudfront.net/img/banner-mobile-buser.e1bda3c.png);
 }
-.logo {
-  width: 55%;
+section {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 .cor-titulo {
   color: #fff;
@@ -43,7 +48,6 @@ header {
 }
 .subtitulo {
   font-weight: 100;
-  text-transform: initial;
 }
 a {
   text-decoration: none;
@@ -52,12 +56,12 @@ a {
   align-self: center;
 }
 form {
+  width: 90%;
   padding: 1rem;
   border-radius: 0.5rem;
   display: flex;
   background-color: #fff;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: flex-start;
 }
 label {
@@ -65,7 +69,6 @@ label {
   font-size: 14px;
 }
 .insertion {
-  flex-basis: 100%;
   padding: 0.5rem 0rem;
   margin-bottom: 1rem;
   border-style: solid;
@@ -79,15 +82,31 @@ label {
 }
 .btn-form {
   background-color: #f15179;
+  margin: 0;
   color: #fff;
-  flex-basis: 100%;
   border-color: transparent;
 }
 button:hover {
   background-color: transparent;
 }
-
 nav {
-  display: flex;
+  color: gray;
   background-color: #fff;
+  padding: 1rem;
+}
+nav ul {
+  margin: 0;
+  padding: 0%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+nav ul li {
+  font-size: 12px;
+  padding: 0rem 0.6rem;
+  text-align: center;
+}
+i {
+  font-size: 16px;
 }
