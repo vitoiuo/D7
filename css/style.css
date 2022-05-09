@@ -8,7 +8,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 * {
-  font-size: 16px;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 header {
   display: flex;
@@ -21,14 +22,15 @@ header {
 }
 .container {
   background-color: #f15179;
-  height: 46rem;
-  padding: 1.5rem 1rem;
+  height: 100%;
+  padding: 1.5rem 1.5rem;
   display: flex;
   flex-flow: column wrap;
   row-gap: 1rem;
   align-items: flex-start;
   background: center / cover no-repeat
     url(https://dals0gb6i1pll.cloudfront.net/img/banner-mobile-buser.e1bda3c.png);
+  background-size: 50rem;
 }
 section {
   width: 90%;
@@ -56,21 +58,22 @@ a {
   align-self: center;
 }
 form {
-  width: 90%;
+  width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
   display: flex;
   background-color: #fff;
-  flex-flow: column wrap;
-  justify-content: flex-start;
+  flex-flow: column;
 }
 label {
-  padding-bottom: 0.5rem;
-  font-size: 14px;
+  font-size: 12px;
+  margin-bottom: 3rem;
 }
 .insertion {
-  padding: 0.5rem 0rem;
+  padding: 0.6rem 0rem;
+  padding-left: 2.5rem;
   margin-bottom: 1rem;
+  margin-top: 0.5rem;
   border-style: solid;
   border-color: #e6e6e6;
   border-radius: 5px;
@@ -86,13 +89,22 @@ label {
   color: #fff;
   border-color: transparent;
 }
-button:hover {
-  background-color: transparent;
+.btn-form:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #f15179;
+  border-color: #f15179;
+}
+.btn-form i {
+  font-size: 12px;
 }
 nav {
   color: gray;
   background-color: #fff;
-  padding: 1rem;
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  padding: 1rem 0.5rem 1rem 0.5rem;
 }
 nav ul {
   margin: 0;
@@ -107,6 +119,35 @@ nav ul li {
   padding: 0rem 0.6rem;
   text-align: center;
 }
-i {
+nav ul i {
   font-size: 16px;
+}
+.submit-lente {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  outline: none;
+  line-height: 5.8rem;
+  color: gray;
+}
+.submit-line {
+  position: relative;
+  width: 100%;
+}
+.submit-line input {
+  width: 100%;
+}
+.direita {
+  color: #0266c3;
+  transform: rotate(90deg);
+  right: 0.5rem;
+}
+.direita:hover {
+  cursor: pointer;
+}
+.esquerda {
+  margin-right: 90%;
 }

@@ -4,49 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Buscador de passagens</title>
-
   </head>
   <body>
     <header>
-      <img class="logo" src="img/logo.png" alt="">
-      <a href="">Entrar</a> 
+      <img class="logo" src="img/logo.png" alt="" />
+      <a href="">Entrar</a>
     </header>
     <div class="container">
       <section>
-        <h1 class="cor-titulo titulo">viagens de ônibus mais baratas que a passagem da rodoviária</h1>
-        <h2 class="cor-titulo subtitulo">Sem taxas, com segurança e preço justo</h2>
+        <h1 class="cor-titulo titulo">
+          viagens de ônibus mais baratas que a passagem da rodoviária
+        </h1>
+        <h2 class="cor-titulo subtitulo">
+          Sem taxas, com segurança e preço justo
+        </h2>
       </section>
       <form>
+        <div class="submit-line">
           <label for="#inp1">Saindo de</label>
-          <input class="insertion" id="inp1" placeholder="São Jośe dos Campos - SP">
+          <input
+            class="insertion"
+            id="inp1"
+            type="text"
+            placeholder="São José dos Campos - SP"
+          />
+          <button class="submit-lente esquerda" type="submit">
+            <i class="fal fa-circle"></i>
+          </button>
+          <button class="submit-lente direita" type="submit">
+            <i class="fal fa-exchange"></i>
+          </button>
+        </div>
+
+        <div class="submit-line">
           <label for="#inp2">Indo para</label>
-          <input class="insertion" id="inp2" placeholder="São Paulo - SP">
-            
+          <input class="insertion" id="inp2" placeholder="São Paulo - SP" />
+          <button class="submit-lente esquerda" type="submit">
+            <i class="fal fa-map-marker-alt"></i>
+          </button>
+        </div>
+
+        <div class="submit-line">
           <label for="#inp3" placeholder="">Data de ida</label>
-          <input placeholder="Ida" class="insertion" type="text"z onblur="(this.type='text')" id="inp3" />
+          <input
+            placeholder="Ida"
+            class="insertion"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="inp3"
+          />
+          <button class="submit-lente esquerda" type="submit">
+            <i class="fal fa-calendar-day"></i>
+          </button>
+        </div>
+
+        <div class="submit-line">
           <label for="#inp4">Data de volta</label>
-          <input placeholder="Volta" class="insertion" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="inp4" />
-        <button class="insertion btn-form">Buscar</button>
-        </form>
-        
-        
-      </div>
+          <input
+            placeholder="Volta"
+            class="insertion"
+            type="text"
+            onfocus="(this.type='date')"
+            onblur="(this.type='text')"
+            id="inp4"
+          />
+          <button class="submit-lente esquerda" type="submit">
+            <i class="fal fa-calendar-day"></i>
+          </button>
+        </div>
+        <button class="insertion btn-form">
+          <i class="fal fa-search"></i>
+          Buscar
+        </button>
+      </form>
     </div>
     <nav>
-      
-       <ul>
-        <li><i class="fal fa-search"></i>Buscar</li>  
+      <ul>
+        <li><i class="fal fa-search"></i>Buscar</li>
         <li><i class="far fa-wallet"></i>Carteira</li>
         <li><i class="fal fa-bus"></i>Viagens</li>
         <li><i class="fal fa-badge-percent"></i>Promoções</li>
