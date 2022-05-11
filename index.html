@@ -38,12 +38,12 @@
       <form>
         <div class="submit-line">
           <label for="#inp1">Saindo de</label>
-          <input
-            class="insertion"
-            id="inp1"
-            type="text"
-            placeholder="São José dos Campos - SP"
-          />
+          <select id="origin" class="insertion">
+            <option value="">São José dos Campos - SP</option>
+            <option value="">São Paulo - SP</option>
+            <option value="">Belo Horizonte - MG</option>
+            <option value="">Rio de Janerio - RJ</option>
+          </select>
           <button class="submit-lente esquerda" type="submit">
             <i class="fal fa-circle"></i>
           </button>
@@ -54,7 +54,12 @@
 
         <div class="submit-line">
           <label for="#inp2">Indo para</label>
-          <input class="insertion" id="inp2" placeholder="São Paulo - SP" />
+          <select id="destiny" class="insertion">
+            <option value="">São Paulo - SP</option>
+            <option value="">São José dos Campos - SP</option>
+            <option value="">Belo Horizonte - MG</option>
+            <option value="">Rio de Janerio - RJ</option>
+          </select>
           <button class="submit-lente esquerda" type="submit">
             <i class="fal fa-map-marker-alt"></i>
           </button>

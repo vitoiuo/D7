@@ -161,3 +161,6 @@ nav ul i {
 .esquerda {
   margin-right: 87%;
 }
+select {
+  width: 100%;
+}
