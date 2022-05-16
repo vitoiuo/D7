@@ -80,7 +80,7 @@ label {
 }
 .insertion {
   padding: 0.6rem 0rem;
-  padding-left: 2.5rem;
+  padding-left: 3.5rem;
   margin-bottom: 1rem;
   margin-top: 0.5rem;
   border-style: solid;
@@ -174,4 +174,5 @@ span {
 }
 select {
   width: 100%;
+  -webkit-appearance: none;
 }
